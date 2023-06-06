@@ -66,9 +66,11 @@ class ShowAddTaskBottomSheet extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: InkWell(
-                onTap: (){},
+                onTap: () {},
                 child: Text(
                   '12/12/2022',
+                  style: TextStyle(
+                      color: Theme.of(context).primaryColor, fontSize: 15),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -76,9 +78,8 @@ class ShowAddTaskBottomSheet extends StatelessWidget {
             SizedBox(
               height: 14,
             ),
-
             SizedBox(
-              width: MediaQuery.of(context).size.width*0.5,
+              width: MediaQuery.of(context).size.width * 0.5,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(10, 40),
